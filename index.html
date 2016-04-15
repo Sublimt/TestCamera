@@ -4,13 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
-    <form id="form" action="upload.htm" method="get" enctype="multipart/form-data">
-	    <input id="file" type="file" onchange="this.form.submit();" accept="image/*" capture="camera">
-    </form>
-    
-<script src="js/main.js"></script>
+    <div>
+        <form id="form" action="upload.htm" method="get" >
+	        <input id="file" class="custom-file-input" type="file" onchange="this.form.submit();" accept="image/*" capture="camera" />
+        </form>
+    </div>
+    <div>    
+       <button onclick="$('#file').click();" style="width: 200px; height: 50px;">Klik her</button>
+    </div>
 </body>
 </html>
